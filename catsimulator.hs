@@ -41,6 +41,11 @@ main = do
   if bool1
     then putStrLn "Congratulations.  You made it.  You successfully jumped on the counter like a normal cat should.  That's your thing."
     else putStrLn "You fell.  You did not make it onto the counter and your creature is laughing at you.  You try to play it cool.  It didn't happen.  You simply decided you wanted to lay down instead.  Good save, idiot."
+  _ <-getLine
+  putStrLn "Your day is done.  You have successfully been a cat.  Even though you can be a rambunctious demon you are still deeply loved by the ones around you.  Cherish each and every pet, play and definitely cherish your dumb cat days.  You rest beside your creature now.  Purring as they snore loudly.  You are a fantastic little cat."
+  putStrLn "THE END"
+  _ <-getLine
+  putStrLn "... FUR NOW!"
 
 
 
@@ -73,7 +78,7 @@ attentionRequire :: IO ()
 attentionRequire = do 
   require <- getLine
   case require of
-    "yowl" -> putStrLn "The classic approach.  You scream and holler like you're in dire of medical attention.  The creature who houses you expectedly exits their room to find you.  You plop your fat useless body onto the floor and give a friendly chirp.  Got 'em."
+    "yowl" -> putStrLn "The classic approach.  You scream and holler like you're in dire need of medical attention.  The creature who houses you expectedly exits their room to find you.  You plop your fat useless body onto the floor and give a friendly chirp.  Got 'em."
     "swat" -> putStrLn "You have nothing to lose.  Your head is empty and your body is 80% blubber.  Good choice.  You start in a crouch and then leap towards the door full force.  The door swings open and the ugly creature who houses you yells.  Likely because of how awesome and powerful you are."
     "knock"-> putStrLn "You.  Let.  Loose.  All the rage of every war could not compare to the disaster you can cause.  You knock over so many precious belongings and the house fills with the joys of chaos.  The creature who houses you comes out with their face red.  You flop on the floor to reveal your belly.  Let the petting begin."
     _ -> do
